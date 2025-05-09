@@ -17,13 +17,13 @@ class App extends Component{
 	}
 
 	componentDidMount(){
-		// fetch('https://jsonplaceholder.typicode.com/users').then((response) => {
+		fetch('https://jsonplaceholder.typicode.com/users').then((response) => {
 
-		// 	return response.json();
+			return response.json();
 
-		// }).then((robots) => {
-		// 	this.setState({robots:robots});
-		// });
+		}).then((robots) => {
+			this.setState({robots:robots});
+		});
 	}
 
 	onSearchChange = (event) => {
